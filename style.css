@@ -1,6 +1,4 @@
-
-	@import url('https://fonts.googleapis.com/css2?family=Lexend=Deca:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
 	* {	
 	margin: 0;
 	padding: 0;
@@ -25,15 +23,16 @@ main {
 	display: flex;
 }
 
-.login{
-	padding: clamp(35px, 8%, 70px);
+.login {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	width: 100%;
 	max-width:500px;
 	min-height: 100vh;
-	justify-content: space-between;
+	
+	padding: clamp(35px, 8%, 70px);
 }
 
 .wrapper {
@@ -53,16 +52,16 @@ main {
 .login_title{
 	color: var(--deep-grey);
 	font-size: 1.5em;
-	margin-bottom:30px;
+	margin-bottom: 30px;
 }
 
-.login_label{
+.login__label{
 display:block;
 margin-bottom: 20px;
 width:100%;	
 }
 
-.input{
+.input {
 	width: 100%;
 	background-color: var(--light-grey);
 	border: 2px solid rgba(0, 0, 0, 0);	
@@ -75,7 +74,7 @@ width:100%;
 	
 }
 
-.login_label span {
+.login__label span {
 	position: absolute;
 	font-size: 0.8em;
 	font-weight: 700;
@@ -92,10 +91,10 @@ width:100%;
 	
 }
 
-.login_label .span-active{
-	font-size:0.7em;
+.login__label .span-active {
+	font-size: 0.7em;
 	margin: 8px 10px;
-}
+  }
 
 .login_icons{
 	display:flex;
@@ -176,8 +175,8 @@ width:100%;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--red);
-	border-radius:20px;
-	border:none;
+	border-radius: 20px;
+	border: none;
 	cursor: pointer;
 	margin-bottom: 30px;
 	
@@ -189,7 +188,7 @@ width:100%;
 }
 
 .login_button:disabled{
-	cursor:auto;
+	cursor: auto;
 	 background-color: white;
 	 border: 2px solid var(--light-grey);
 	 
@@ -200,11 +199,12 @@ width:100%;
 	fill: var(--grey);
 }
 
-.login_link{
+.login_link {
 	font-size: 0.8em;
 	text-decoration: none;
 	color: var(--medium-grey);
 	text-transform: 5px;
+	margin-bottom: 5px;
 	font-weight: 700;
 }
 
